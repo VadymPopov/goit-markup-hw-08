@@ -1,0 +1,26 @@
+.logo {
+    text-decoration: none;
+    font-family: var(--logo-font);
+    @include font(24px, 700, 28px);
+    color: var(--accent-color);
+    
+}
+
+.logo__label {
+    color: var(--main-dark-color);
+    &--footer {
+        color: var(--main-light-color);
+    }
+}
+
+.logo--footer {
+    margin-bottom: 20px;
+    display: block;
+}
+
+@media screen and (min-width: 1200px) {
+    .logo {
+        
+    @include font(26px, 700, 31px);
+    }
+}

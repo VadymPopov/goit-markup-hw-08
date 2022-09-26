@@ -1,0 +1,104 @@
+.team-section {
+    background: var(--sec-background-color);
+}
+
+.team-list {
+    list-style: none;
+
+    &__member {
+            text-align: center;
+            background: #FFFFFF;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 0px 0px 4px 4px;
+
+            &:not(:last-child) {
+                    margin-bottom: 30px;
+            }
+    }
+
+    &__header {
+            padding-top: 30px;
+            margin-bottom: 10px;
+            @include font(16px, 500, 19px);
+
+            color: var(--main-dark-color);
+    }
+
+    &__text {
+        padding-bottom: 16px;
+
+        @include font(16px, 400, 19px);
+    }
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+            margin-bottom: 24px;
+
+        &:not(:last-child) {
+                margin-right: 10px;
+            }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: #AFB1B8;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+
+        transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
+    }
+
+    &__link:hover, &__link:focus {
+        color: var(--main-light-color);
+            background-color: var(--accent-color);
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+        &__member{
+
+                &:nth-child(1), &:nth-child(2) {
+                    margin-bottom: 30px;
+                }
+
+                &:nth-child(3), &:nth-child(4) {
+                    margin-bottom: 0;
+                }
+
+                &:nth-child(2n+1) {
+                    margin-right: 30px;
+                }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+.team-list {
+    &__member {
+        
+            &:not(:last-child) {
+               margin-right: 30px;
+               margin-bottom: 0;
+            }
+        }
+    }
+}

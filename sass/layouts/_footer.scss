@@ -1,0 +1,140 @@
+.footer {
+    background: var(--main-background-color);
+    padding: 60px 0;
+    text-align: center;
+
+    &__address {
+        margin-bottom: 60px;
+    }
+
+}
+
+.address {
+    font-style: normal;
+
+    &__item:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: var(--primary-text-color);
+        @include font(14px, 400, 24px);
+        
+        color: var(--main-light-color);
+
+        transition: color 250ms var(--timing-function);
+    }
+
+    &__link--contacts {
+        color: rgba(255, 255, 255, 0.6);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+}
+
+.footer__social {
+    &-list {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    &-title {
+        display: block;
+        margin-bottom: 20px;
+
+        color: var(--main-light-color);
+
+        text-transform: uppercase;
+        @include font(14px, 700, 16px);
+    }
+
+    &-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: var(--main-light-color);
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+
+        transition: background-color 250ms var(--timing-function);
+
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+        }
+    }
+
+    &-item:not(:last-child) {
+        margin-right: 10px;
+
+    }
+
+    &-icon {
+        fill: var(--main-light-color);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer-tablet {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .footer {
+        &__address {
+            margin-right: 165px;
+            margin-bottom: 0;
+        }
+
+        &__social-links {
+            margin-top: 5px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
+
+        &-tablet {
+            margin-bottom: 0;
+        }
+
+        &__flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        &__address {
+            margin-right: 70px;
+        }
+
+    }
+
+    .address {
+        &__item--margin {
+            margin-bottom: 20px;
+        }
+
+        &__item:not(:last-child) {
+                margin-bottom: 9px;
+        }
+
+    }
+
+    .footer__social{
+        &-list {
+            display: flex;
+        }
+    }
+
+}
