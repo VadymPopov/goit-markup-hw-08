@@ -60,6 +60,24 @@
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .modal {
+    width: 90%;
+    padding: 25px;
+
+    &__close-button {
+        top: 5px;
+        right: 5px;
+    }
+
+    &__header {
+        @include font(16px, 700, 24px);
+    }
+}
+
+    
+}
+
 @media screen and (min-width: 1200px) {
     .modal {
         width: 528px;

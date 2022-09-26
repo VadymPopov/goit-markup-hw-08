@@ -132,6 +132,20 @@
     justify-content: center;
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .order-form__label-terms {
+    margin: 0;
+    @include font(7px, 400, 8px);
+    }
+
+    .order-form__terms-link {
+    @include font(7px, 400, 8px);
+    margin-left: 4px;
+    }
+
+}
+
+
 @media screen and (min-width: 1200px) {
 
 .order-form__label-terms {

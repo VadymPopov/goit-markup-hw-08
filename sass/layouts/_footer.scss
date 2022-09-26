@@ -37,6 +37,11 @@
 }
 
 .footer__social {
+
+    &-links {
+        margin-bottom: 60px;
+    }
+    
     &-list {
         display: flex;
         justify-content: center;
@@ -86,7 +91,6 @@
     .footer-tablet {
         display: flex;
         justify-content: center;
-        margin-bottom: 60px;
     }
 
     .footer {
@@ -116,6 +120,7 @@
 
         &__address {
             margin-right: 70px;
+            text-align: start;
         }
 
     }

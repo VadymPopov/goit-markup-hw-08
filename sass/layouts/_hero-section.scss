@@ -6,7 +6,7 @@
     }
 
     .overlay {
-        max-width: 480px;
+        max-width: 1600px;
         min-height: 400px;
         margin-left: auto;
         margin-right: auto;
@@ -23,13 +23,20 @@
         margin-bottom: 30px;
         margin-left: auto;
         margin-right: auto;
+        width: 360px;
 
         @include font(24px, 900, 42px);
-        
+
         text-transform: uppercase;
         letter-spacing: 0.06em;
 
         color: var(--main-light-color);
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .hero-title {
+        width: 100%;
     }
 }
 
@@ -41,7 +48,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
     .section--main {
         background-color: var(--main-background-color);
         text-align: center;
