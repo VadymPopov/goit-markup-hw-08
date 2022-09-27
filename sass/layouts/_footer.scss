@@ -7,6 +7,10 @@
         margin-bottom: 60px;
     }
 
+     &-tablet {
+        margin-bottom: 60px;
+    }
+
 }
 
 .address {
@@ -37,10 +41,6 @@
 }
 
 .footer__social {
-
-    &-links {
-        margin-bottom: 60px;
-    }
     
     &-list {
         display: flex;
@@ -91,6 +91,7 @@
     .footer-tablet {
         display: flex;
         justify-content: center;
+        margin-bottom: 60px;
     }
 
     .footer {
@@ -100,7 +101,7 @@
         }
 
         &__social-links {
-            margin-top: 5px;
+            margin: 0;
         }
     }
 }
@@ -115,12 +116,15 @@
         &__flex {
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
         }
 
         &__address {
             margin-right: 70px;
             text-align: start;
+        }
+
+        &__social-links {
+            margin: 0;
         }
 
     }

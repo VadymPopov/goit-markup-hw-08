@@ -51,6 +51,7 @@
     padding: 10px 24px;
 }
 
+
 @media screen and (min-width: 1200px) {
     .main-button {
         min-width: 216px;
@@ -58,10 +59,16 @@
     }
 }
 
-
 .order-button {
     width: 200px;
     padding: 10px 52px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .order-button {
+        width: 160px;
+        padding: 5px 32px;
+    }
 }
 
 .subscription-button {

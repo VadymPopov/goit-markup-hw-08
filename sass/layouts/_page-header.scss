@@ -114,6 +114,7 @@
     .contacts {
         display: flex;
         margin-left: auto;
+        @include font(14px, 500, 16px);
     }
 
     .contacts .contacts__item {

@@ -651,6 +651,12 @@ button {
   padding: 10px 52px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .order-button {
+    width: 160px;
+    padding: 5px 32px;
+  }
+}
 .subscription-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1163,10 +1169,17 @@ button {
   .mobile-social .mobile-social__item:nth-child(4n) {
     padding-left: 0;
   }
+  .mobile-social .mobile-social__item:last-child {
+    padding-left: 10px;
+    margin-right: 0;
+  }
   .mobile-social__link {
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 500;
-    line-height: 1.2857142857;
+    line-height: 1.4545454545;
+  }
+  .mobile-nav__list {
+    margin-bottom: 202px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1290,6 +1303,9 @@ button {
     display: -ms-flexbox;
     display: flex;
     margin-left: auto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1428571429;
   }
   .contacts .contacts__item {
     margin-bottom: 0;
@@ -1745,6 +1761,9 @@ button {
 .footer__address {
   margin-bottom: 60px;
 }
+.footer-tablet {
+  margin-bottom: 60px;
+}
 
 .address {
   font-style: normal;
@@ -1769,9 +1788,6 @@ button {
   color: var(--accent-color);
 }
 
-.footer__social-links {
-  margin-bottom: 60px;
-}
 .footer__social-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1826,13 +1842,14 @@ button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 60px;
   }
   .footer__address {
     margin-right: 165px;
     margin-bottom: 0;
   }
   .footer__social-links {
-    margin-top: 5px;
+    margin: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1846,13 +1863,13 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
   }
   .footer__address {
     margin-right: 70px;
     text-align: start;
+  }
+  .footer__social-links {
+    margin: 0;
   }
   .address__item--margin {
     margin-bottom: 20px;

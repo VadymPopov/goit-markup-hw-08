@@ -135,15 +135,22 @@
     .mobile-social {
         display: flex;
         flex-wrap: wrap;
-        // justify-content: start;
     }
 
     .mobile-social .mobile-social__item:nth-child(4n) {
         padding-left: 0;
     }
+    .mobile-social .mobile-social__item:last-child {
+        padding-left: 10px;
+        margin-right: 0;
+    }
 
     .mobile-social__link {
-        @include font(14px, 500, 18px);
+        @include font(11px, 500, 16px);
+    }
+
+    .mobile-nav__list {
+        margin-bottom: 202px;
     }
 
 }
