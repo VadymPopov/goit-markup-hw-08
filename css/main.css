@@ -1855,6 +1855,9 @@ button {
 @media screen and (min-width: 1200px) {
   .footer-tablet {
     margin-bottom: 0;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .footer__flex {
     display: -webkit-box;
@@ -1863,6 +1866,9 @@ button {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .footer__address {
     margin-right: 70px;
@@ -1881,6 +1887,9 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .footer__social-title {
+    text-align: start;
   }
 }
 .portfolio {

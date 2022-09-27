@@ -111,11 +111,13 @@
 
         &-tablet {
             margin-bottom: 0;
+            align-items: baseline;
         }
 
         &__flex {
             display: flex;
             justify-content: space-between;
+            align-items: baseline;
         }
 
         &__address {
@@ -143,6 +145,10 @@
     .footer__social{
         &-list {
             display: flex;
+        }
+
+        &-title {
+            text-align: start;
         }
     }
 
